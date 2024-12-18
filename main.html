@@ -1,13 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <style>
+   /* Apply styles to the container */
+#container {
+  margin: 20px; /* Set a margin */
+   /* Font size for main content */
+  position: relative;
+}
+
+/* Pseudo-element to insert content before */
+#container::before {
+  content: "Before Element"; /* Text before the element */
+  color: #f00; /* Red color */
+  font-size: 20px;
+  display: inline-block; /* Ensure inline-block for proper spacing */
+  margin-right: 5px; /* Add spacing between 'before' and main content */
+}
+
+/* Pseudo-element to insert content after */
+#container::after {
+  content: "After Element"; /* Text after the element */
+  color: #f00; /* Red color */
+  font-size: 20px;
+  display: inline-block; /* Ensure inline-block for proper spacing */
+  margin-left: 5px; /* Add spacing between 'after' and main content */
+}
+
+    </style>
 </head>
 <body>
-    <div id="container">This is the main container element</div>
+    <div id="container">
+        Akash
+    </div>
 </body>
 </html>
